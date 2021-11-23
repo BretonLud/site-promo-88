@@ -1,0 +1,33 @@
+.site-title{
+  font-size: 2em;
+}
+
+.site-header .site-branding {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: 0 0% 0 0;
+  -webkit-transform: translate(0%,0%);
+  -ms-transform: translate(0%,0%);
+  transform: translate(0%,0%);
+}
+
+.site-branding {
+  background: #f8f8f8;
+  opacity: 89%;
+  padding: 3em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.site-title, .site-description {
+  color: black !important;
+}
+
+.site-title::after {
+  background: black !important;
+  content: "";
+}

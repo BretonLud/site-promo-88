@@ -1,0 +1,25 @@
+.techno__column--padding {
+  padding: 3em;
+}
+
+.techno__column{
+  width: 25% !important;
+  flex-basis: auto !important;
+  flex-grow: 0 !important;
+}
+
+.techno__columns{
+  justify-content: space-evenly;
+}
+
+.techno_column--hidden:not(:first-child){
+  visibility: hidden !important;
+}
+
+.techno__column:not(:first-child){
+  margin-left: 2em ;
+}
+
+.wp-image-118{
+  width: 100px !important;
+}

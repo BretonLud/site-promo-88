@@ -1,0 +1,38 @@
+{
+  "name": "Wordpress promo",
+  "version": "1.0.0",
+  "description": "Wordpress promo",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-loader": "^8.2.3",
+    "sass": "^1.43.4",
+    "webpack": "^5.45.1"
+  },
+  "devDependencies": {
+    "4": "0.0.0",
+    "@babel/preset-env": "^7.16.4",
+    "css-loader": "^6.2.0",
+    "expect": "^27.0.6",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^2.1.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=dev webpack --mode=development",
+    "build": "webpack  --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BretonLud/Fricoot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BretonLud/Fricoot/issues"
+  },
+  "homepage": "https://github.com/BretonLud/Fricoot#readme"
+}
