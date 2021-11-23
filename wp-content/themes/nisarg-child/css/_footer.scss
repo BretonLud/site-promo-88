@@ -1,3 +1,8 @@
+.site-footer{
+  background: #f8f8f8;
+  color: black;
+}
+
 .site-info{
   display: flex;
   justify-content: space-between;
@@ -7,5 +12,13 @@
 .site-footer__commits{
   display: flex;
   width: 50%;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.github-embed.github-logo-mark p{
+  display: none;
+}
+
+.site-footer__commit{
+  width: 60%;
 }

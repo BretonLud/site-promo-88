@@ -8,15 +8,15 @@
  */
 ?>
 </div><!-- #content -->
+
 <footer id="colophon" class="site-footer" role="contentinfo">
+
     <div class="site-info">
         <p>6 avenue du Maréchal Juin, 70200 Lure</p>
         <div class="site-footer__commits">
             <p>Derniers commits :</p>
             <div class="site-footer__commit">
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('<b>footer_top'))?></b>
             </div>
         </div>
     </div><!-- .site-info -->
