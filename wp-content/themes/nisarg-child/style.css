@@ -220,10 +220,19 @@
   justify-content: space-evenly;
 }
 
-.github-embed.github-logo-mark p {
-  display: none;
+.site-footer a {
+  color: black;
 }
 
-.site-footer__commit {
-  width: 60%;
+.newsL {
+  display: flex;
+}
+
+.newsL h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.presentation__header {
+  max-width: 400px;
 }

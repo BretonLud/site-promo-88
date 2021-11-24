@@ -7,7 +7,7 @@ function theme_enqueue_styles(){
 
 
 function my_custom_scripts() {
-    wp_enqueue_script( 'nisarg', get_stylesheet_directory_uri() . '/script.js');
+    wp_enqueue_script( 'parent-style', get_stylesheet_directory_uri() . '/dist/main.js', '','',true);
 }
 add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
 

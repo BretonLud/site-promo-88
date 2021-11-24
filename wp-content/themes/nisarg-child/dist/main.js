@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -16,7 +15,18 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./css/style.scss\");\n\n\n//# sourceURL=webpack://Wordpress_promo/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./css/style.scss\");\n/* harmony import */ var _url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./url */ \"./src/url.js\");\n/* harmony import */ var _url__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_url__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://Wordpress_promo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/url.js":
+/*!********************!*\
+  !*** ./src/url.js ***!
+  \********************/
+/***/ (() => {
+
+eval("var location = document.querySelector('article').id;\nvar siteBranding = document.querySelector('.site-branding');\nvar homeLink = document.querySelector('.home-link');\nvar siteHeader = document.querySelector('.site-header');\n\nif (location === 'post-101') {\n  homeLink.style.display = 'none';\n  siteBranding.innerHTML = \"<p class='presentation__header'>Durant notre formation, nous avons fait différentes présentations que vous retrouverez ci-joint en téléchargement</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/bgCodage.jpeg')\";\n  siteHeader.style.backgroundSize = \"cover\";\n} else if (location === 'post-99') {\n  homeLink.style.display = 'none';\n  siteBranding.innerHTML = \"<p class='presentation__header'>Notre formation a été prévu pour une durée de 8 mois avec 2 mois de stages compris. Celle-ci à une durée de 1260 heures.\\n\" + \"Durant la formation nous avons vu différentes technologies du développement web, que vous retrouvez ci-dessous.</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/developpeur.jpg)\";\n  siteHeader.style.backgroundSize = \"cover\";\n}\n\n//# sourceURL=webpack://Wordpress_promo/./src/url.js?");
 
 /***/ }),
 
@@ -26,6 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Wordpress_promo/./css/style.scss?");
 
 /***/ })
@@ -57,6 +68,35 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
