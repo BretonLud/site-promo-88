@@ -35,13 +35,8 @@
 }
 
 .wp-block-image {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   display: flex;
   justify-content: center;
-}
-
-.wp-block-image > img {
   height: 150px;
 }
 
@@ -80,6 +75,7 @@
   opacity: 60%;
   border-radius: 10px;
   padding: 0.5em;
+  box-shadow: 2px 2px 2px #c8c8c8;
 }
 
 .wp-block-buttons > .wp-block-button.wp-block-button__width-100 {
@@ -156,14 +152,21 @@
   content: "";
 }
 
-.techno__column--padding {
-  padding: 3em;
-}
-
 .techno__column {
   width: 25% !important;
   flex-basis: auto !important;
   flex-grow: 0 !important;
+}
+
+.techno__column .wp-block-image {
+  background: #00968830;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 2em 3em 0 3em;
+}
+
+.techno__column .wp-block-group {
+  padding: 0 4em 1em 4em;
 }
 
 .techno__columns {
@@ -182,6 +185,38 @@
   width: 100px !important;
 }
 
+@media screen and (max-width: 960px) {
+  .techno__columns {
+    flex-direction: column;
+  }
+
+  .techno__columns:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .techno__column {
+    width: 100% !important;
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+  .techno__column:not(:first-child) {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+  .techno__column:last-child {
+    margin-bottom: 0;
+  }
+
+  .techno_column--hidden:not(:first-child) {
+    display: none;
+  }
+
+  .techno__column .wp-block-group {
+    padding: 0 2em 1em 2em;
+  }
+}
 .media {
   align-items: center !important;
 }
@@ -203,6 +238,15 @@
   box-shadow: 2px 2px 2px #c8c8c8;
 }
 
+@media screen and (max-width: 960px) {
+  .w3eden .mr-3 {
+    margin-right: 0 !important;
+  }
+
+  .w3eden .ml-3 {
+    margin-left: 0 !important;
+  }
+}
 .site-footer {
   background: #f8f8f8;
   color: black;
@@ -220,19 +264,152 @@
   justify-content: space-evenly;
 }
 
+.site-footer__commit {
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 2px 2px 2px #c8c8c8;
+}
+
+.newsL:not(:last-child) {
+  padding-bottom: 0.3em;
+}
+
 .site-footer a {
   color: black;
 }
 
 .newsL {
   display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .newsL h3 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
+.github-commit {
+  list-style: none;
+  text-align: left;
+}
+
+.github-commit > a {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.github-commits {
+  padding: 0;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .site-info {
+    flex-direction: column;
+  }
+
+  .site-footer__commits {
+    width: 100%;
+  }
+
+  .site-footer__commit .newsL {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-footer__commit .newsL h3 {
+    padding: 0.5em;
+  }
+
+  .github-commits {
+    padding: 0.2em;
+    font-size: 10px;
+  }
+}
 .presentation__header {
   max-width: 400px;
+}
+
+.site__home-header {
+  background-position: center center !important;
+  backface-visibility: hidden !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  animation: slideBg 15s ease-in-out infinite running !important;
+  animation-timing-function: ease-in-out !important;
+  background: url(dist/8db7e44e27940f3c9711.jpg);
+}
+
+@keyframes slideBg {
+  0% {
+    background: url(dist/8db7e44e27940f3c9711.jpg);
+  }
+  33% {
+    background: url(dist/065d593c5ae6ec6c6d40.jpg);
+  }
+  66% {
+    background: url(dist/7e54853d5b80dc2dc6ac.jpeg);
+  }
+}
+@media screen and (max-width: 960px) {
+  .entry-header h1 {
+    font-size: 24px;
+  }
+
+  .main-navigation .menu-toggle {
+    border: none !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .card-body .media {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .media-body {
+    width: 100%;
+  }
+
+  .card-body .media > div:not(:first-child) {
+    margin-top: 1em;
+  }
+
+  .w3eden .mb-2 {
+    margin-bottom: 1rem !important;
+  }
+}
+.tss-wrapper {
+  background: #00968830 !important;
+}
+
+.testimonial__title {
+  margin-bottom: 3em;
+  margin-top: 3em;
+  font-size: 36px;
+}
+
+.slick-list {
+  padding-top: 3em !important;
+  padding-right: 3em !important;
+}
+
+@media screen and (max-width: 960px) {
+  .slick-list {
+    padding-top: 1em !important;
+    padding-right: 0 !important;
+  }
+
+  .testimonial__title {
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+}
+.post-content {
+  box-shadow: none !important;
+}
+
+.primary-menu > li > a:hover {
+  color: rgba(255, 0, 0, 0.6) !important;
 }

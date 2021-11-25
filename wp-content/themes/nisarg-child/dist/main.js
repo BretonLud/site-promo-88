@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ (() => {
+
+eval("var location = document.querySelector('article').id;\nvar siteTitle = document.querySelector('.site-title');\nvar siteBranding = document.querySelector('.site-branding');\nvar homeLink = document.querySelector('.home-link');\nvar siteHeader = document.querySelector('.site-header');\n\nif (location === 'post-101') {\n  homeLink.style.display = 'none';\n  siteBranding.style.display = \"flex\";\n  siteBranding.style.flexDirection = \"column\";\n  siteBranding.style.maxWidth = \"400px\";\n  siteBranding.innerHTML = \"<h1 class='site-title'>Les exposés</h1><p class='presentation__header'>Durant notre formation, nous avons fait différentes présentations que vous retrouverez ci-joint en téléchargement</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/bgCodage.jpeg')\";\n  siteHeader.style.backgroundSize = \"cover\";\n} else if (location === 'post-99') {\n  homeLink.style.display = 'none';\n  siteBranding.style.display = \"flex\";\n  siteBranding.style.flexDirection = \"column\";\n  siteBranding.style.maxWidth = \"400px\";\n  siteBranding.innerHTML = \"<h1 class='site-title'>Notre formation</h1><p class='presentation__header'>Notre formation a été prévu pour une durée de 8 mois avec 2 mois de stages compris. Celle-ci à une durée de 1260 heures.\\n\" + \"Durant la formation nous avons vu différentes technologies du développement web, que vous retrouvez ci-dessous.</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/developpeur.jpg) \";\n  siteHeader.style.backgroundSize = \"cover\";\n} else {\n  siteTitle.innerHTML = \"Développeur Web & Web Mobile\";\n  homeLink.style.maxWidth = \"400px\";\n  siteHeader.classList.add(\"site__home-header\");\n}\n\n//# sourceURL=webpack://Wordpress_promo/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -16,17 +26,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./css/style.scss\");\n/* harmony import */ var _url__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./url */ \"./src/url.js\");\n/* harmony import */ var _url__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_url__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://Wordpress_promo/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/url.js":
-/*!********************!*\
-  !*** ./src/url.js ***!
-  \********************/
-/***/ (() => {
-
-eval("var location = document.querySelector('article').id;\nvar siteBranding = document.querySelector('.site-branding');\nvar homeLink = document.querySelector('.home-link');\nvar siteHeader = document.querySelector('.site-header');\n\nif (location === 'post-101') {\n  homeLink.style.display = 'none';\n  siteBranding.innerHTML = \"<p class='presentation__header'>Durant notre formation, nous avons fait différentes présentations que vous retrouverez ci-joint en téléchargement</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/bgCodage.jpeg')\";\n  siteHeader.style.backgroundSize = \"cover\";\n} else if (location === 'post-99') {\n  homeLink.style.display = 'none';\n  siteBranding.innerHTML = \"<p class='presentation__header'>Notre formation a été prévu pour une durée de 8 mois avec 2 mois de stages compris. Celle-ci à une durée de 1260 heures.\\n\" + \"Durant la formation nous avons vu différentes technologies du développement web, que vous retrouvez ci-dessous.</p>\";\n  siteHeader.style.background = \"url('../wp-content/themes/nisarg-child/css/images/developpeur.jpg)\";\n  siteHeader.style.backgroundSize = \"cover\";\n}\n\n//# sourceURL=webpack://Wordpress_promo/./src/url.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ \"./css/style.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://Wordpress_promo/./src/index.js?");
 
 /***/ }),
 

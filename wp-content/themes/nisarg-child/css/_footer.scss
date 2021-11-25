@@ -15,15 +15,69 @@
   justify-content: space-evenly;
 }
 
+.site-footer__commit{
+  background: rgba(0,0,0,0.1) !important;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 2px 2px 2px #c8c8c8;
+}
+
+.newsL:not(:last-child){
+  padding-bottom: 0.3em;
+}
+
 .site-footer a {
   color: black;
 }
 
 .newsL{
   display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .newsL h3 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 18px;
+}
+
+.github-commit{
+  list-style: none;
+  text-align: left;
+}
+
+.github-commit > a {
+  color: rgba(255,0,0,0.6);
+}
+
+.github-commits{
+  padding: 0;
+  font-size: 14px;
+}
+
+@media screen and(max-width: 960px) {
+  .site-info{
+    flex-direction: column;
+  }
+
+  .site-footer__commits{
+    width: 100%;
+  }
+
+  .site-footer__commit .newsL{
+    display: flex;
+    flex-direction: column ;
+  }
+
+  .site-footer__commit .newsL h3{
+    padding: 0.5em;
+  }
+
+  .github-commits{
+    padding: 0.2em;
+    font-size: 10px
+  }
+
+
 }

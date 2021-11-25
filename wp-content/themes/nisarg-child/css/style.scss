@@ -17,3 +17,13 @@
 @import "button--download";
 @import "footer";
 @import "header";
+@import "presentation";
+@import "testominial";
+
+.post-content{
+  box-shadow: none !important;
+}
+
+.primary-menu > li > a:hover {
+  color: rgba(255,0 , 0 ,0.6) !important;
+}

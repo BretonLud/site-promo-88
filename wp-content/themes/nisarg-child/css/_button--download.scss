@@ -18,3 +18,13 @@
   background: #f8f8f8;
   box-shadow: 2px 2px 2px #c8c8c8;;
 }
+
+@media screen and(max-width: 960px){
+  .w3eden .mr-3 {
+    margin-right: 0 !important;
+  }
+
+  .w3eden .ml-3{
+    margin-left: 0 !important;
+  }
+}
