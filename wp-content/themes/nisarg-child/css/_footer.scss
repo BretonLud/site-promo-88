@@ -15,6 +15,14 @@
   justify-content: space-evenly;
 }
 
+@media screen and(max-width: 960px){
+  .entry-footer{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
 .site-footer__commit{
   background: rgba(0,0,0,0.1) !important;
   border-radius: 10px;

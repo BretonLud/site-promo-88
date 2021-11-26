@@ -19,13 +19,21 @@
 .wp-block-image{
   display: flex;
   justify-content: center;
-  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .column:not(:first-child){
   margin-left: 2em ;
 }
 
+.entry-content>h3 {
+  margin: 0 0 1em 5.2%;
+
+  @media screen and(max-width: 960px){
+    margin: 0 0 1em 0;
+  }
+}
 
 @media screen and(max-width: 960px) {
 

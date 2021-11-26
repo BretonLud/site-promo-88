@@ -1,28 +1,26 @@
-.presentation__header{
-  max-width: 400px;
-}
 
-.site__home-header{
-  background-position: center center !important;
-  backface-visibility: hidden !important;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  animation: slideBg 15s ease-in-out infinite running !important;
-  animation-timing-function: ease-in-out !important;
-  background: url("../../../uploads/2021/11/cropped-cropped-acs_lure_good-scaled-1-1.jpg") ;
-}
+  .site__home-header{
+    background-position: center center !important;
+    backface-visibility: hidden !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    @media screen and(min-width: 960px) {
+      animation: slideBg 15s cubic-bezier(0, 0.96, 0, 0.96) infinite 0s backwards !important;
+    }
+  }
 
-@keyframes slideBg {
-  0% {
-    background: url("../../../uploads/2021/11/cropped-cropped-acs_lure_good-scaled-1-1.jpg") ;
+  @keyframes slideBg {
+    33% {
+      background : url("./images/group_notSerious.jpg") ;
+    }
+    66%{
+      background : url("./images/in_work.jpg") ;
+    }
   }
-  33% {
-    background : url("./images/coding.jpg") ;
-  }
-  66%{
-    background : url("./images/bgCodage.jpeg") ;
-  }
-}
+
+
+
+
 
 @media screen and(max-width: 960px) {
   .entry-header h1 {
